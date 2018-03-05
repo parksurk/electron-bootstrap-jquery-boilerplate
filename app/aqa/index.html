@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aibril Question & Answer - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Aibril Question & Answer v0.5</a>
+            </div>
+            <!-- /.navbar-header -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="bootstrap-design-theme-example.html"><i class="fa fa-files-o fa-fw"></i> Bootstrap Design Template</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i> Q&A history
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">안토니오</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            애플의 창업자는 누구지?
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Aibril</strong>
+                                        </div>
+                                        <p>
+                                            스티브잡스 입니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">안토니오</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            코스닥 상작기업으로 국내 최초로 안티 바이러스 제품을 개발한 기업의 상호는 머지?
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Aibril</strong>
+                                        </div>
+                                        <p>
+                                            안철수연구소 입니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="안토니오님 안녕^^ Aibril에게 물어보세요~" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Additional Info
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#wiki-pills" data-toggle="tab">Wiki</a>
+                                </li>
+                                <li><a href="#comentions-pills" data-toggle="tab">Co-mentions</a>
+                                </li>
+                                <li><a href="#news-pills" data-toggle="tab">News</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="wiki-pills">
+                                    <h4>Wiki 검색결과</h4>
+                                    <div class="panel-body">
+                                        <ul class="chat">
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/55C1E7/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="https://blog.naver.com/weekendworks/30135704443" target="popup">안철수연구소 판교사옥</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from wiki updated at 2017.08.12
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수연구소 판교사옥 AhnLab_Stevenleach & Associates ‘인생의 커뮤니케이션이 실현 되는 곳’ 안철수연구소 판교사옥 AhnLab_Stevenleach & Associates 의사가 아픈 몸을...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/55C1E7/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="https://blog.naver.com/weekendworks/30135704443" target="popup">안철수연구소 판교사옥</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from wiki updated at 2017.08.12
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수연구소 판교사옥 AhnLab_Stevenleach & Associates ‘인생의 커뮤니케이션이 실현 되는 곳’ 안철수연구소 판교사옥 AhnLab_Stevenleach & Associates 의사가 아픈 몸을...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/55C1E7/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="https://blog.naver.com/weekendworks/30135704443" target="popup">안철수연구소 판교사옥</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from wiki updated at 2017.08.12
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수연구소 판교사옥 AhnLab_Stevenleach & Associates ‘인생의 커뮤니케이션이 실현 되는 곳’ 안철수연구소 판교사옥 AhnLab_Stevenleach & Associates 의사가 아픈 몸을...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/55C1E7/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="https://blog.naver.com/weekendworks/30135704443" target="popup">안철수연구소 판교사옥</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from wiki updated at 2017.08.12
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수연구소 판교사옥 AhnLab_Stevenleach & Associates ‘인생의 커뮤니케이션이 실현 되는 곳’ 안철수연구소 판교사옥 AhnLab_Stevenleach & Associates 의사가 아픈 몸을...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <div class="tab-pane fade" id="comentions-pills">
+                                    <h4>함께 언급된 회사</h4>
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Keyword</th>
+                                                        <th>#Mention</th>
+                                                        <th>Sentiment</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Cardigm Care</td>
+                                                        <td>8</td>
+                                                        <td>Positive</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Microsoft</td>
+                                                        <td>6</td>
+                                                        <td>Positive</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Cheetah Mobile</td>
+                                                        <td>4</td>
+                                                        <td>Negative</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Comodo</td>
+                                                        <td>1</td>
+                                                        <td>Positive</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /.table-responsive -->
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <div class="tab-pane fade" id="news-pills">
+                                    <h4>News 검색결과</h4>
+                                    <div class="panel-body">
+                                        <ul class="chat">
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/FA6F57/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="http://news.hankyung.com/article/201801223153i" target="popup">[단독] 안철수 "3년 전부터 블록체인에 관심… 당내 투표에도 도입 검토한 적...</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from 한국경제메거진 updated at 2018-01-22 10:22
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수 연구소는 일반인에게는 컴퓨터 백신을 무료로 보급하고 기업이나 관공서에는 대가를 받는 방식으로 사업을 시작했다. 초창기에는 경영 부진으로 어려움을 겪었다고 안 대표는 회상했다. 안 대표는 “당시...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/FA6F57/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="http://news.hankyung.com/article/201801223153i" target="popup">[단독] 안철수 "3년 전부터 블록체인에 관심… 당내 투표에도 도입 검토한 적...</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from 한국경제메거진 updated at 2018-01-22 10:22
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수 연구소는 일반인에게는 컴퓨터 백신을 무료로 보급하고 기업이나 관공서에는 대가를 받는 방식으로 사업을 시작했다. 초창기에는 경영 부진으로 어려움을 겪었다고 안 대표는 회상했다. 안 대표는 “당시...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/FA6F57/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="http://news.hankyung.com/article/201801223153i" target="popup">[단독] 안철수 "3년 전부터 블록체인에 관심… 당내 투표에도 도입 검토한 적...</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from 한국경제메거진 updated at 2018-01-22 10:22
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수 연구소는 일반인에게는 컴퓨터 백신을 무료로 보급하고 기업이나 관공서에는 대가를 받는 방식으로 사업을 시작했다. 초창기에는 경영 부진으로 어려움을 겪었다고 안 대표는 회상했다. 안 대표는 “당시...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="left clearfix">
+                                                <span class="chat-img pull-left">
+                                                    <img src="http://placehold.it/50/FA6F57/fff" alt="Result Thumbnail" class="img-thumbnail" />
+                                                </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font"><a href="http://news.hankyung.com/article/201801223153i" target="popup">[단독] 안철수 "3년 전부터 블록체인에 관심… 당내 투표에도 도입 검토한 적...</a></strong>
+                                                        <small class="pull-right text-muted">
+                                                            <i class="fa fa-clock-o fa-fw"></i> from 한국경제메거진 updated at 2018-01-22 10:22
+                                                        </small>
+                                                    </div>
+                                                    <p>
+                                                        안철수 연구소는 일반인에게는 컴퓨터 백신을 무료로 보급하고 기업이나 관공서에는 대가를 받는 방식으로 사업을 시작했다. 초창기에는 경영 부진으로 어려움을 겪었다고 안 대표는 회상했다. 안 대표는 “당시...
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <script src="../renderer.js"></script>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
