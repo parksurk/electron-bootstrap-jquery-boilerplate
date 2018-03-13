@@ -1,5 +1,14 @@
 $(function() {
     $('#side-menu').metisMenu();
+
+    $('#additional-info').hide();
+    $('#answer001').click(function(){
+      $('#additional-info').toggle();
+    });
+    $('#answer002').click(function(){
+      $('#additional-info').toggle();
+    });
+
 });
 
 //Loads the correct sidebar on window load,

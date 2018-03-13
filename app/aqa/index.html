@@ -130,7 +130,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="right clearfix">
+                                <li class="right clearfix" id="answer001">
                                     <span class="chat-img pull-right">
                                         <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
                                     </span>
@@ -160,7 +160,7 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="right clearfix">
+                                <li class="right clearfix" id="answer002">
                                     <span class="chat-img pull-right">
                                         <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
                                     </span>
@@ -195,7 +195,7 @@
                 <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
-            <div class="row">
+            <div class="row" id="additional-info">
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -203,20 +203,14 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="#wiki-pills" data-toggle="tab">Wiki</a>
-                                </li>
-                                <li><a href="#comentions-pills" data-toggle="tab">Co-mentions</a>
-                                </li>
-                                <li><a href="#news-pills" data-toggle="tab">News</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="wiki-pills">
-                                    <h4>Wiki 검색결과</h4>
+                          <div class="panel-group" id="accordion">
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Wiki 검색결과</a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="panel-body">
                                         <ul class="chat">
                                             <li class="left clearfix">
@@ -286,9 +280,15 @@
                                         </ul>
                                     </div>
                                     <!-- /.panel-body -->
-                                </div>
-                                <div class="tab-pane fade" id="comentions-pills">
-                                    <h4>함께 언급된 회사</h4>
+                                  </div>
+                              </div>
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">함께 언급된 회사</a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <div class="table-responsive">
                                             <table class="table table-striped">
@@ -331,9 +331,15 @@
                                         <!-- /.table-responsive -->
                                     </div>
                                     <!-- /.panel-body -->
-                                </div>
-                                <div class="tab-pane fade" id="news-pills">
-                                    <h4>News 검색결과</h4>
+                                  </div>
+                              </div>
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">News 검색결과</a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="chat">
                                             <li class="left clearfix">
@@ -403,8 +409,9 @@
                                         </ul>
                                     </div>
                                     <!-- /.panel-body -->
-                                </div>
-                            </div>
+                                  </div>
+                              </div>
+                          </div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -431,12 +438,13 @@
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
+    <!--
     <script src="../vendor/raphael/raphael.min.js"></script>
     <script src="../vendor/morrisjs/morris.min.js"></script>
     <script src="../data/morris-data.js"></script>
-
+     -->
     <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../js/sb-admin-2.js"></script>
 
 </body>
 
